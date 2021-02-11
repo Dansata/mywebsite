@@ -9,14 +9,9 @@
   --gray6:#F2F2F2;
 }
 body{
-  overflow: hidden;
+  overflow-x: hidden!important;
 }
-.overflowed{
-  overflow-y:scroll;
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-}
+
 *, html{
   margin: 0;
   padding: 0;
@@ -24,7 +19,18 @@ body{
   cursor: url("data:image/svg+xml,%3Csvg height='6' width='6' viewBox='0 0 8 8' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='4' cy='4' fill='%23eee' r='4'/%3E%3C/svg%3E") 3 3, auto;
 }
 *::selection{
-  background-color:var(--burn-yellow)!important ;
+  background-color:var(--cherry)!important ;
+}
+*::-webkit-scrollbar {
+  display: none;
+}
+.line{
+  position: absolute;
+  top: 0;
+  right: 50%;
+  width: 0.2em;
+  height: 7em;
+  background-color: var(--cherry);
 }
 .cursor {
   display: none;
@@ -70,21 +76,23 @@ html:not(html:hover) .cursor::after {
   opacity: 0;
   transform: scale(0);
 }
-
 @import url('https://fonts.googleapis.com/css2?family=Cormorant:wght@400;500;700&display=swap');
 .radial-gradient{
   height: 100vh;
   background: var(--dark-blue);
   background:radial-gradient(at center, rgba(55, 37, 89), var(--dark-blue));
 }
+
+
 .noize{
-pointer-events: none;
+ pointer-events: none;
  position: fixed;
  width: 100vw;
  height: 100vh;
  mix-blend-mode: multiply;
- opacity: 0.15;
+ opacity: 0.05;
  background-image:url('../images/noise.gif');
+z-index: 1000;
 }
 .hero{
   padding: 15em 0px;
@@ -136,4 +144,30 @@ h2, h3{
 }
 p, .p{
   font-size: 4em;
+}
+.alert-danger{
+  background: linear-gradient(268.77deg, rgba(255, 164, 94, 0.5) 0.89%, rgba(161, 54, 112, 0.5) 98.68%) !important;
+border-radius: 20px !important;
+border: none !important;
+padding: 2em!important;
+}
+.alert-danger p{
+  font-family: Cormorant;
+font-style: normal;
+font-weight: normal;
+font-size: 1.1em;
+line-height: 1.5em;
+}
+.perk{
+  font-size: 2.5em;
+}
+.alert-danger small{
+  color: var(--burn-yellow);
+}
+.alert-danger a{
+  display: inline-block;
+  width: 3em;
+  height: 3em;
+  align-items: center;
+  border-radius: 50%;
 }

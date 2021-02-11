@@ -1,3 +1,5 @@
+ScrollReveal().reveal('.anime-order', {interval : 200, reset : true,} );
+
 $(document).mousemove(function(event) {
   windowWidth = $(window).width();
   windowHeight = $(window).height();
@@ -58,3 +60,5 @@ document.querySelectorAll('.cursor').forEach(cursor => {
     elem.addEventListener('mouseleave', () => (onElement = undefined))
   })
 })
+
+var siema = new Siema();
