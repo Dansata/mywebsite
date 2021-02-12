@@ -150,6 +150,7 @@ p, .p{
 border-radius: 20px !important;
 border: none !important;
 padding: 2em!important;
+min-height: 100%!important;
 }
 .alert-danger p{
   font-family: Cormorant;
@@ -170,4 +171,17 @@ line-height: 1.5em;
   height: 3em;
   align-items: center;
   border-radius: 50%;
+}
+.techy{
+  border: solid 2px var(--cherry);
+  border-radius: 20px;
+  margin-bottom: 1em !important;
+}
+.techy span{
+  margin-left: 1em!important;
+  font-size: 0.8em;
+}
+.bordered{
+  background: inherit!important;
+  border: solid 2px var(--cherry) !important;
 }

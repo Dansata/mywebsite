@@ -5,14 +5,14 @@
 }
 
 .siema__wrapper2 {
-  height: 35vh;
+  height: auto;
   padding: 50px 0;
 }
 
 .siema,
 .siema > div,
 .siema > div > div {
-  height: 100%;
+  height: 100% !important;
 }
 
 .siema {
@@ -21,7 +21,7 @@
 }
 
 .slide {
-  height: 100%;
+  height: 100% !important;
   cursor: grab;
 }
 .slide > img {
