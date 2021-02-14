@@ -171,3 +171,28 @@ line-height: 1.5em;
   align-items: center;
   border-radius: 50%;
 }
+a .linearicons-arrow-right{
+  transform: translateX(-1em);
+  transition: ease all 0.7s;
+}
+a:hover .linearicons-arrow-right{
+  transform: translateX(0em);
+}
+.techy{
+  border: solid 2px var(--cherry);
+  border-radius: 20px;
+  margin-bottom: 1em !important;
+}
+.techy span{
+  margin-left: 1em!important;
+  font-size: 0.8em;
+}
+.bordered{
+  background: inherit!important;
+  border: solid 2px var(--cherry) !important;
+}
+@media (max-width: 576px) {
+  h1{
+    font-size: 3em !important;
+  }
+}
