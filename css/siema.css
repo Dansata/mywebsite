@@ -41,3 +41,9 @@
   margin-right:1em !important;
   padding-bottom: 1em !important;
 }
+
+@media (max-width: 576px) {
+  siema__wrapper2{
+    overflow: hidden!important;
+  }
+}
