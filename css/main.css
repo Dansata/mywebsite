@@ -150,7 +150,6 @@ p, .p{
 border-radius: 20px !important;
 border: none !important;
 padding: 2em!important;
-min-height: 100%!important;
 }
 .alert-danger p{
   font-family: Cormorant;
@@ -172,6 +171,13 @@ line-height: 1.5em;
   align-items: center;
   border-radius: 50%;
 }
+a .linearicons-arrow-right{
+  transform: translateX(-1em);
+  transition: ease all 0.7s;
+}
+a:hover .linearicons-arrow-right{
+  transform: translateX(0em);
+}
 .techy{
   border: solid 2px var(--cherry);
   border-radius: 20px;
@@ -184,4 +190,9 @@ line-height: 1.5em;
 .bordered{
   background: inherit!important;
   border: solid 2px var(--cherry) !important;
+}
+@media (max-width: 576px) {
+  h1{
+    font-size: 3em !important;
+  }
 }
