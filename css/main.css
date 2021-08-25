@@ -101,8 +101,10 @@ html:not(html:hover) .cursor::after {
  position: fixed;
  width: 100vw;
  height: 100vh;
- mix-blend-mode: multiply;
- opacity: 0.05;
+ mix-blend-mode: normal;
+ opacity: 0.03;
+ background-size: auto;
+ background-repeat: repeat;
  background-image:url('../images/noise.gif');
 z-index: 1000;
 }
@@ -176,6 +178,8 @@ line-height: 1.5em;
 .flag{
   height: 1em;
   transform: translateY(-0.15em);
+  border-radius: 4px !important;
+  border: 2px solid var(--cherry);
 }
 .perk{
   font-size: 2.5em;
@@ -217,8 +221,6 @@ a:hover .linearicons-arrow-right{
    top: 0!important
    width: 100%;
    height: 100%;
-   mix-blend-mode: multiply;
-   opacity: 0.05;
    background-image:url('../images/noise.gif');
   z-index: 1000;
   }

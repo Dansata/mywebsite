@@ -5,9 +5,7 @@
 }
 
 .siema__wrapper2 {
-  height: auto;
-  padding: 50px 0;
-  margin-bottom: 2em;
+  min-height: 35vh;
 }
 
 .siema,
